@@ -115,7 +115,7 @@ main p {
   left: 0;
   right: 0;
   width: 100%;
-  z-index: -1;
+  z-index: -100;
 }
 
 .cafes .bottom-content {
@@ -136,6 +136,10 @@ main p {
   padding: 42px 0 25px 0;
   border-radius: 48px;
   background: linear-gradient(203deg, #f6c7c5 4.72%, #c27d7a 102.83%);
+
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideIn 1s forwards;
 }
 
 .cafes .bottom-content .card-second-menu {
@@ -151,6 +155,10 @@ main p {
     rgba(250, 250, 250, 0.95) 4.72%,
     rgba(84, 21, 17, 0.58) 102.83%
   );
+
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideIn 1s forwards;
 }
 
 .cafes .bottom-content .card-third-menu {
@@ -166,6 +174,10 @@ main p {
     rgba(10, 9, 9, 0.95) 4.72%,
     rgba(84, 21, 17, 0.95) 102.83%
   );
+
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideIn 1s forwards;
 }
 
 .cafes .bottom-content img {
@@ -189,11 +201,9 @@ main p {
   cursor: pointer;
   padding: 14px 0;
   border-radius: 50px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
 }
-
-/* .cafes .bottom-content .card-menu button .delivery-btn {
-    font-weight: bold;
-} */
 
 /* products */
 
@@ -244,4 +254,231 @@ main p {
   width: 48.594px;
   height: 1px;
   background: #000;
+}
+
+/* adsense */
+
+.adsense {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  width: 66%;
+  height: 368.727px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  margin: auto;
+  background: linear-gradient(
+    203deg,
+    rgba(243, 199, 196, 0.95) 4.72%,
+    rgba(84, 21, 17, 0.95) 81.94%
+  );
+}
+
+.adsense img {
+  border-radius: 48px;
+}
+
+.adsense .text {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  padding-right: 60px;
+}
+
+.adsense .text h2 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.adsense .text p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 44px;
+  color: white;
+}
+
+.adsense button {
+  width: 50%;
+  cursor: pointer;
+  padding: 14px 0;
+  border-radius: 50px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+}
+
+/* sobre */
+
+.sobre {
+  position: relative;
+  padding-top: 145px;
+  z-index: -1;
+  height: 100vh;
+}
+
+.sobre img {
+  position: absolute;
+  width: 100%;
+}
+
+.sobre .text {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  height: 100%;
+  margin: auto 25%;
+}
+
+/* meow enjyo */
+
+.meow-enjoy {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.meow-enjoy img {
+  position: absolute;
+  top: 0;
+}
+
+.meow-enjoy .left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 457.939px;
+  width: 42%;
+  padding: 20px 40px;
+  border-radius: 48px 0 0 48px;
+  color: white;
+  background: linear-gradient(
+    203deg,
+    rgba(84, 21, 17, 0.66) 4.72%,
+    #f3c7c4 102.83%
+  );
+}
+
+.meow-enjoy .left-content h2 {
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.meow-enjoy .left-content h5 {
+  font-size: 20px;
+}
+
+.meow-enjoy .left-content .btn {
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.meow-enjoy .right-content {
+  width: 373.891px;
+  padding: 30px;
+  color: white;
+  border-radius: 0px 48px 48px 0px;
+  background: linear-gradient(203deg, #8f423d 4.72%, #fff 102.83%);
+}
+
+.meow-enjoy .right-content h3 {
+  font-size: 40px;
+}
+
+.meow-enjoy .right-content p {
+  font-size: 16px;
+}
+
+/* footer */
+
+footer {
+  align-items: center;
+  margin: 0 140px;
+  padding: 200px 0 0 0;
+}
+
+footer .long-ruler {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  margin-bottom: 100px;
+}
+
+footer .wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+footer .wrapper .informations {
+  width: 250px;
+}
+
+footer .wrapper .informations ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+footer .wrapper .informations ul li {
+  cursor: pointer;
+  filter: blur(0.4px);
+}
+
+footer .links-Úteis a {
+  color: var(--text);
+  font-size: 13px;
+}
+
+footer .wrapper .institucional {
+  width: 284px;
+}
+
+footer p {
+  font-size: 13px;
+}
+
+/* music and piringan */
+
+#turntable-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.play-pause-button {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.playing {
+  transform: rotate(360deg);
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
