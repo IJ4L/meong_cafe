@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/login.css" />
+
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="login-text">
+      <h1>Create Your Account</h1>
+      <h5>
+        Selamat datang kembali! Silakan masuk untuk mendapatkan akses eksklusif
+        ke berita terkini dan <br />
+        analisis mendalam seputar dunia olahraga.
+      </h5>
+    </div>
+
+    <div class="login-container">
+      <div class="login-email">
+        <form id="registerForm" action="register.php" method="post">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email / Phone Number"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="6 Digit Pin"
+            required
+          />
+
+          <button type="submit">Register Your Account</button>
+          <p>
+            Already have an account?
+            <span><a href="login.html">Sign In</a></span>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("registerForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var registrationSuccess = true;
+
+          if (registrationSuccess) {
+            alert("Registration successful! You can now log in.");
+          }
+        });
+    </script>
+  </body>
+</html>

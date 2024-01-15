@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/login.css" />
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="login-text">
+      <h1>Login to Your Account</h1>
+      <h5>
+        Selamat datang kembali! Silakan masuk untuk mendapatkan akses eksklusif
+        ke berita terkini dan <br />
+        analisis mendalam seputar dunia olahraga.
+      </h5>
+    </div>
+
+    <div class="login-container">
+      <div class="login-email">
+        <form action="login.php" method="post">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Email / Phone Number"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="6 Digit Pin"
+            required
+          />
+
+          <button type="submit">Login to your Account</button>
+          <p>
+            Don’t have an account yet?
+            <span><a href="register.html">Register now!</a></span>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
